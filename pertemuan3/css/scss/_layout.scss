@@ -1,0 +1,21 @@
+h1 {
+	color: $warna-biru;
+}
+
+ul {
+	li {
+	@extend %lists;
+		a {
+			color: $warna-merah;
+			@extend %link;
+			@extend %fontGede;
+			transition: .5s all;
+			transform: translate(0, 0);
+			&:hover {
+				color: green;
+				display: inline-block;
+				transform: translate(100px, 0);
+			}
+		}
+	}
+}
